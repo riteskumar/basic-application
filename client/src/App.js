@@ -40,7 +40,7 @@ const App = ()=> {
   }
   return (
     <main>
-      <h1 className="title" >CRUD OPERATION</h1>
+      <h1 className="title" >CRUD OPERATIONS</h1>
       <div className="input_holder">
         <input type="text" value={input} onChange={(e)=> setInput(e.target.value)} />
         <button type="submit" onClick={updateId ? updateTask : addTask}>{updateId ? "Update Task" : "Add Task"}</button>

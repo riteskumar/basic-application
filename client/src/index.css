@@ -1,8 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto",sans-serif;
+    font-family: "Poppins",sans-serif;
+    background-color: #fdf0d5;
 }
 main{
     max-width: fit-content;
@@ -10,27 +12,68 @@ main{
 }
 .title{
     text-align: center;
+    background-color:  #003049;
+    width: 100vw;
     padding: 20px 0;
+    margin-bottom: 23px;
+    color: white;
+    
 }
 .input_holder{
     display: flex;
     gap: 20px;
     justify-content: center;
 }
-input,button{
+input{
     padding: 10px;
+    width: 100%;
+    margin-left: 23px;
+    border-radius: 11px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+}
+input:focus{
+    border: 3px solid rgba(0, 0, 0, 0.771);
+}
+button{
+    padding: 5px;
+    width: 20%;
+    border-radius: 23px;
+    font-weight: 600;
+    font-size: large;
+    cursor: pointer;
+}
+::selection{
+    background-color: white;
+    color: #283618;
 }
 li{
-    background-color: rgb(216,216,216);
+    background-color: #283618;
     padding: 15px;
     margin: 10px;
     display: flex;
+    font-weight: 600;
+    color: white;
     justify-content: space-between;
+    border-radius: 21px;
 }
 .icon_holder{
     display: flex;
-    gap: 10px;
+    gap: 40px;
+    font-size: 1.3rem;
+    background-color:#283618;
 }
 .icon{
     cursor: pointer;
+    transition: 0.7 ease-in-out;
+    background-color:#283618;
+
+}
+.icon:hover{
+    transform: scale(1.2);
+    background-color: white;
+    border-radius: 30%;
+    color: #780000 ;
+   
 }
