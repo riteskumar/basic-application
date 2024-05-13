@@ -4,7 +4,7 @@ import cors from "cors"
 import routes from "./routes/TaskRoutes.js";
 
 const app = express();
-const PORT = 5000
+const PORT = process.env.PORT| 5000
 const URI = `mongodb+srv://admin:admin@crud-application.wnwalsb.mongodb.net/?retryWrites=true&w=majority&appName=CRUD-Application`
 app.use(express.json());
 app.use(cors());
